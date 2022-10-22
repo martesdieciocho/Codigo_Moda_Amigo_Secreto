@@ -4,6 +4,7 @@ var userController = require('../controllers/usersController')
 
 
 router.get('/listUser' ,userController.list)
-router.get('/createUser')
+router.get('/createUser', userController.create)
+router.post('/addUser', userController.add)
 
 module.exports = router;

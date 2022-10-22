@@ -19,7 +19,7 @@ module.exports = function(sequelize, dataTypes){
 
         let User_rol =sequelize.define(alias,cols,config)
     
-       User_rol.associate = models => {
+     /*  User_rol.associate = models => {
             User_rol.hasMany(models.Rol,{
                 as: "rols",
                 through: "user_rol",
@@ -28,7 +28,7 @@ module.exports = function(sequelize, dataTypes){
                 timestamps: false
             })
     }
-       /* User_rol.associate = models => {
+        User_rol.associate = models => {
             User_rol.hasMany(models.Users,{
             as: "users",
             through: "user_rol",
