@@ -25,7 +25,7 @@ module.exports = function(sequelize, dataTypes){
             type: dataTypes.STRING
         },
         rol_id:{
-            type: person_id.INTEGER
+            type: dataTypes.INTEGER
         },
         person_id:{
             type: dataTypes.INTEGER

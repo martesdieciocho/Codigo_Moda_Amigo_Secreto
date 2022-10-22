@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amigo Secreto - Código Moda</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Listado de participantes</h1>
+    <ul>
+        <% for (let i = 0; i < userResponse.length; i++){%>
+                <li><%=userResponse[i].nombre%></li>
+            <%}%>
+    </ul>
+  </body>
+</html>
