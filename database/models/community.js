@@ -21,12 +21,12 @@ module.exports = function(sequelize, dataTypes){
 
     let Community =sequelize.define(alias,cols,config)
 
-    Community.associate = models => {
+    /*Community.associate = models => {
         Community.hasMany(models.User,{
             as: "user",
             foreingKey: "user_id"
         })
-    }
+    }*/
 
     
 

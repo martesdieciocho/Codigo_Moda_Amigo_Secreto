@@ -3,6 +3,7 @@ var router = express.Router();
 var userController = require('../controllers/usersController')
 
 
-router.get('/userList' ,userController.list)
+router.get('/listUser' ,userController.list)
+router.get('/createUser')
 
 module.exports = router;

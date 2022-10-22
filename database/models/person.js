@@ -20,12 +20,12 @@ module.exports = function(sequelize, dataTypes){
 
     let Person =sequelize.define(alias,cols,config)
 
-    Person.associate = models => {
+    /*Person.associate = models => {
         Person.belongsTo(models.Person,{
             as: "user",
             foreingKey: "user_id"
         })
-    }
+    }*/
 
     
 

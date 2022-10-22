@@ -1,3 +1,5 @@
+const { userInfo } = require("os")
+
 module.exports = function(sequelize, dataTypes){
     let alias = "User"
 
@@ -43,7 +45,7 @@ module.exports = function(sequelize, dataTypes){
 
     let User =sequelize.define(alias,cols,config)
 
-    User.associate = models => {
+    /*User.associate = models => {
         User.belongsTo(models.Person,{
             as: "person",
             foreingKey: "person_id"
@@ -57,7 +59,14 @@ module.exports = function(sequelize, dataTypes){
         })
     }
 
-    
+    User.associate = models => {
+        User.belongsTo(models.user_rol,{
+            as: "user_rol",
+            foreingKey: "id"
+        })
+    }*/
+
+
     
     return User;
 }

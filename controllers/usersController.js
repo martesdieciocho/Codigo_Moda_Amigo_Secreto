@@ -6,6 +6,12 @@ let usersController ={
         .then(userResponse =>{
             return res.render("UserList", {userResponse:userResponse})
         })
+    },
+    create: function(req, res){
+        return res.render('createUser')
+    },
+    insert: function(req, res){
+        
     }
 }
 

@@ -13,24 +13,9 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "mysql2": "^2.3.3",
-<<<<<<< HEAD
-    "nodemon": "^2.0.20"
-  }
-=======
-    "sequelize": "^6.25.3",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.25.2",
     "sequelize-cli": "^6.5.1"
-  },
-  "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/martesdieciocho/Codigo_Moda_Amigo_Secreto.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/martesdieciocho/Codigo_Moda_Amigo_Secreto/issues"
-  },
-  "homepage": "https://github.com/martesdieciocho/Codigo_Moda_Amigo_Secreto#readme",
-  "description": ""
->>>>>>> 09d0965509c9971ca4c6c2ad0a9461b560d7cd46
-}
+  }
+    
+  }

@@ -20,12 +20,12 @@ module.exports = function(sequelize, dataTypes){
 
     let Rol =sequelize.define(alias,cols,config)
 
-    Rol.associate = models => {
+    /*Rol.associate = models => {
         Rol.hasMany(models.User_rol,{
             as: "User_rol",
             foreingKey: "id"
         })
-    }
+    }*/
     
     return Rol;
 }
