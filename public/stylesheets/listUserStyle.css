@@ -1,0 +1,111 @@
+
+*{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+display: flex;
+justify-content: center;
+min-height: 100vh;
+background: #f6f6f6;
+
+}
+
+a {
+  color: #00B7FF;
+}
+
+.boxContainer{
+  width: 300px;
+  
+}
+
+.boxContainer h1{
+  color: #fff;
+  background: #03a9f4;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.boxContainer ul{
+  position: relative;
+  background: #fff;
+  
+  
+}
+
+.boxContainer ul li{
+  list-style: none;
+  padding: 10px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
+  transition: transform 0.5s;
+  margin-bottom: 13px;
+}
+
+.boxContainer ul li:hover{
+  transform: scale(1.1);
+  z-index: 100;
+  background-color: #25bcff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, .2);
+  color: #fff;
+}
+
+.boxContainer ul li span{
+width: 20px;
+height: 20px;
+text-align: center;
+line-height: 20px;
+background: #25bcff;
+color: #fff;
+display:inline-block;
+border-radius: 50%;
+margin-right: 10px;
+font-size: 12px;
+font-weight: 600;
+transform: translateY(-20px);
+
+}
+
+.boxContainer ul li:hover span{
+  background-color: #fff;
+  color: #25bcff;
+}
+
+.buttonsContainer .createUserButton {
+  
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+  border: solid;
+  background: #25bcff;
+  color: #fff;  
+  
+
+}
+.buttonsContainer .raffleButton {
+  
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+  border: solid;
+  background: #e41c1c;
+  color: #fff; 
+  
+}
+
+.buttonsContainer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20.3%;
+  margin-left: 10px;
+}

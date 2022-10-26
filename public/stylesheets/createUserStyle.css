@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+
+
+.form{
+    text-align: center;
+    width: 60%;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+}
+
+.fields{
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    border: 1px solid #7dd6ff;
+    text-align: center;
+}
+
+.addButton{
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+  border: solid;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-color: #ffffff;
+}
+
+.form h1{
+    font-family: roboto;
+}

@@ -2,20 +2,21 @@
 <html>
   <head>
     
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/createUserStyle.css' />
   </head>
   <body>
-    <h1>Welcome to create an user</h1>
         <section>
-            <form action="/users/addUser" method="post">
-                <label for="first_name">Nombre:<input name ="first_name" type="text"></label><br><br>
-                <label for="last_name">Apellido:<input name ="last_name" type="text"></label><br><br>
-                <label for="dni">Cedula:<input name ="dni" type="number"></label><br><br>
-                <label for="dislikes">¿Que no me gusta?:<input name ="dislikes" type="text"></label><br><br>
-                <label for="allergies">¿A qué soy alérgico?:<input name ="allergies" type="text"></label><br><br>
-                <label for="pleasures">Gustos:<input name ="pleasures" type="text"></label>
-                <!--/*Campos de lista desplegable*/-->
-                <p><button type="submit">Agregar</button></p>
+            <form class="form" action="/users/addUser" method="post">
+                <h1>Creación de usuario</h1>
+                <div class="formFields">
+                <input class="fields" name ="first_name" type="text" placeholder="Ingrese su nombre">
+                <input class="fields" name ="last_name" type="text" placeholder="Ingrese su apellido">
+                <input class="fields" name ="dni" type="number" placeholder="Ingrese su cédula">
+                <input class="fields" name ="dislikes" type="text" placeholder="¿Que dulces te gustan?">
+                <input class="fields" name ="allergies" type="text" placeholder="¿Que dulces no te gustan?">
+                <input class="fields" name ="pleasures" type="text" placeholder="¿A qué eres alérgico?">
+                <button class="addButton" type="submit">Agregar</button>
+              </div>
             </form>
 
         </section>

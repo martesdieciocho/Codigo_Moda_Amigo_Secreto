@@ -22,7 +22,7 @@ let usersController ={
         }
         db.User.create(user)
         .then(function(){
-            return  res.redirect("/users/userList")
+            return  res.redirect("/users/createUser")
         })
         .catch(err => console.error(err));
     }

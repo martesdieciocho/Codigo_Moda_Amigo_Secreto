@@ -2,14 +2,23 @@
 <html>
   <head>
     <title>Amigo Secreto - Código Moda</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/listUserStyle.css' />
   </head>
   <body>
-    <h1>Listado de participantes</h1>
-    <ul>
-        <% for (let i = 0; i < userResponse.length; i++){%>
-                <li><%=userResponse[i].nombre%></li>
-            <%}%>
-    </ul>
+
+    <div class="boxContainer">
+      <h1>Listado de participantes</h1>
+      <ul>
+          <% for (let i = 0; i < userResponse.length; i++){%>
+                  <li><span><%=i+1%></span><%=userResponse[i].first_name%></li>
+              <%}%>
+      </ul>
+    </div>
+    <div class="buttonsContainer">
+      <button class="createUserButton" onclick="window.location='/users/createUser'">Crear usuario</button>
+      <button class="raffleButton">¡Sorteo!</div>
+
+
+    </div>
   </body>
 </html>
