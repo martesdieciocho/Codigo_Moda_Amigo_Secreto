@@ -25,7 +25,13 @@ let usersController ={
             return  res.redirect("/users/createUser")
         })
         .catch(err => console.error(err));
-    }
+    },
+    raffle:function(req, res){
+    db.User.findAll()
+    .then(userResponse =>{
+        return {userResponse:userResponse}
+    })
+}
 }
 
 module.exports = usersController;
