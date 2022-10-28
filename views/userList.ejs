@@ -14,9 +14,13 @@
               <%}%>
       </ul>
     </div>
+     
     <div class="buttonsContainer">
-      <button class="createUserButton" onclick="window.location='/users/createUser'">Crear usuario</button>
-      <button class="raffleButton" id="raffle">¡Sorteo!</div>
+        <button class="createUserButton" onclick="window.location='/users/createUser'">Crear usuario</button>
+        <button class="raffleButton" id="raffle">¡Sorteo!</div>  
+     
+
+      
     </div>
 
     <div class="emergentContainter" id="emergent_container">
@@ -30,6 +34,23 @@
           document.write(giftDate(today, 5))
 
         </script></p>
+        <% const nombres = [];
+        let nombre = userResponse.map(
+            function (nombre){
+                nombres.push(nombre.first_name)
+            }
+        )
+        console.log(nombres)
+        
+
+        let random = Math.floor(Math.random() * nombres.length)
+        let test= nombres[random]
+       console.log(test)
+ %> 
+ <p><%=test  %> </p>
+
+        
+       
         <button id="close"> Cerrar</button>
         <script> 
           const raffle = document.getElementById('raffle'); 

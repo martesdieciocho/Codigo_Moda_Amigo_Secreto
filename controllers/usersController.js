@@ -2,10 +2,10 @@ let db = require('../database/models')
 
 let usersController ={
     list: function(req, res){
-        db.User.findAll()
-        .then(userResponse =>{
-            return res.render("UserList", {userResponse:userResponse})
-        })
+        db.User.findAll()        
+        .then(userResponse =>{        
+        res.render ('userList', {userResponse})       
+    })
         .catch(err => console.error(err));
     },
     create: function(req, res){
@@ -26,12 +26,8 @@ let usersController ={
         })
         .catch(err => console.error(err));
     },
-    raffle:function(req, res){
-    db.User.findAll()
-    .then(userResponse =>{
-        return {userResponse:userResponse}
-    })
-}
+    
+
 }
 
 module.exports = usersController;
