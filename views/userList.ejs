@@ -22,16 +22,45 @@
     <div class="emergentContainter" id="emergent_container">
       <div class="emergent">
         <h1>Tu amigo secreto es:</h1>
-        <p><script>
+        
+        <% const nombres = [];
+        let nombre = userResponse.map(
+            function (nombre){
+                nombres.push(nombre.first_name)
+            }
+        )
+        console.log(nombres)
+        
+
+        let random = Math.floor(Math.random() * nombres.length)
+        let test= nombres[random]
+       console.log(test)
+ %> 
+ <p><%=test  %> </p>
+
+        <p><strong>Fechas a endulzar:</strong></p>
+        <script>
          function giftDate(date, days){
           date.setDate(date.getDate() + days);
           return date.toDateString();}
           var today = new Date();
           document.write(giftDate(today, 5))
-
         </script></p>
-        <button id="close"> Cerrar</button>
+
+          <p><strong>La fecha del descubrimiento es:</strong></p>
+          <script>
+            function giftFinally(date, days){
+              date.setDate(date.getDate() + days);
+              return date.toDateString();}
+              var today = new Date();
+              document.write(giftFinally(today, 25))
+          </script></p>
+
+
+
+        <button class="closeButton" id="close"> Cerrar</button>
         <script> 
+
           const raffle = document.getElementById('raffle'); 
           const emergent_container = document.getElementById('emergent_container'); 
           const close = document.getElementById('close'); 

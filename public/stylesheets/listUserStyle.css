@@ -103,6 +103,16 @@ transform: translateY(-20px);
   
 }
 
+.closeButton{
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  border: solid;
+  background: #25bcff;
+  color: #fff;
+  margin: 10px;
+}
+
 .buttonsContainer{
   display: flex;
   flex-direction: column;
@@ -131,10 +141,29 @@ transform: translateY(-20px);
 
 .emergent{
   background-color: #fff;
-  width: 600px;
+  width: 500px;
   max-width: 100%;
   padding: 30px, 50px;
-  border-radius: 5px;
-  box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px ;
+  box-shadow: 7px 13px 37px #000;
   text-align: center;
+  border-top: 4px solid #03a9f4;
+  border-bottom: 4px solid #03a9f4;
 }
+
+.emergent h1 {
+  padding: 10px;
+}
+
+.emergent p {
+  padding: 20px;
+
+}
+
+.emergent strong {
+  padding-bottom: 45px;
+  border-bottom: 4px solid #20ADFA;
+}
+
+
+
