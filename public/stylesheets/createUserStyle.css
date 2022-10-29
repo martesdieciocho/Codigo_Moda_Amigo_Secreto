@@ -18,7 +18,7 @@
     font-weight: 700;
     margin-bottom: 20px;
     border-radius: 10px;
-    
+   margin-left: 20%;
 }
 
 .fields{
@@ -36,12 +36,20 @@
   height: 35px;
   border-radius: 10px;
   border: solid;
-  background: #ffffff;
-  color: rgb(0, 0, 0);
+  background: #03a9f4;
   text-align: center;
   border-color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
 }
 
 .form h1{
     font-family: roboto;
+}
+
+.sectionForm{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

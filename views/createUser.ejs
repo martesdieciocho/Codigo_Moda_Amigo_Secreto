@@ -5,20 +5,20 @@
     <link rel='stylesheet' href='/stylesheets/createUserStyle.css' />
   </head>
   <body>
-        <section>
+        <section class="sectionForm">
             <form class="form" action="/users/addUser" method="post">
                 <h1>Creación de usuario</h1>
                 <div class="formFields">
                 <input class="fields" name ="first_name" type="text" placeholder="Ingrese su nombre">
                 <input class="fields" name ="last_name" type="text" placeholder="Ingrese su apellido">
                 <input class="fields" name ="dni" type="number" placeholder="Ingrese su cédula">
-                <input class="fields" name ="dislikes" type="text" placeholder="¿Que dulces te gustan?">
-                <input class="fields" name ="allergies" type="text" placeholder="¿Que dulces no te gustan?">
-                <input class="fields" name ="pleasures" type="text" placeholder="¿A qué eres alérgico?">
-                <button class="addButton" onclick="window.location='/users/listUser'">Agregar</button>
+                <input class="fields" name ="allergies" type="text" placeholder="¿A que eres alergico?">
+                <input class="fields" name ="dislikes" type="text" placeholder="¿Que dulces no te gustan?">
+                <input class="fields" name ="pleasures" type="text" placeholder="¿Que dulces te gustan?">
               </div>
+              <button class="addButton" onclick="window.location='/users/listUser'">Agregar</button>
             </form>
-
+            <button class="addButton" onclick="window.location='/users/listUser'">Ir al sorteo</button>
         </section>
   </body>
 </html>
