@@ -14,9 +14,13 @@
               <%}%>
       </ul>
     </div>
+     
     <div class="buttonsContainer">
-      <button class="createUserButton" onclick="window.location='/users/createUser'">Crear usuario</button>
-      <button class="raffleButton" id="raffle">¡Sorteo!</div>
+        <button class="createUserButton" onclick="window.location='/users/createUser'">Crear usuario</button>
+        <button class="raffleButton" id="raffle">¡Sorteo!</div>  
+     
+
+      
     </div>
 
     <div class="emergentContainter" id="emergent_container">
@@ -47,18 +51,17 @@
           document.write(giftDate(today, 5))
         </script></p>
 
-          <p><strong>La fecha del descubrimiento es:</strong></p>
-          <script>
-            function giftFinally(date, days){
-              date.setDate(date.getDate() + days);
-              return date.toDateString();}
-              var today = new Date();
-              document.write(giftFinally(today, 25))
-          </script></p>
+        <p><strong>Fecha de descubrimiento:</strong></p>
+        <script>
+        function giftDate(date, days){
+          date.setDate(date.getDate() + days);
+          return date.toDateString();}
+          var today = new Date();
+          document.write(giftDate(today, 30))
+        </script></p>
 
-
-
-        <button class="closeButton" id="close"> Cerrar</button>
+        </script></p>
+        <button id="close" class="closeButton"> Cerrar</button>
         <script> 
 
           const raffle = document.getElementById('raffle'); 
