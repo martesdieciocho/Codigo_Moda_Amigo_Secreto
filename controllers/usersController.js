@@ -1,5 +1,6 @@
 let db = require('../database/models')
 
+
 let usersController ={
     list: function(req, res){
         db.User.findAll()        
@@ -26,7 +27,12 @@ let usersController ={
         })
         .catch(err => console.error(err));
     },
-    
+
+    login: function(req, res){
+        
+		return res.redirect('/users/listUser');
+
+    }
 
 }
 
