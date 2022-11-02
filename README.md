@@ -16,6 +16,10 @@ npm install --save  sequelize sequelize-cli
 
 mpm start (Corre el programa)
 
+Comando para correr con docker:
+
+docker run -it -p 4000:3000 codigo_moda
+
 Autores y agradecimientos:
 
 Línea Directa
